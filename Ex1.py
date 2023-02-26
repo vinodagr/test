@@ -31,15 +31,15 @@ def app():
   with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
-  tenth = st.text_input('Enter your 10th percentage')
-  twelth = st.text_input('Enter your 12th percentage')
-  UG = st.text_input('Enter your UG percentage')
-  PG = st.text_input('Enter your PG percentage')
-  Gender = st.selectbox('Select your gender', ['Male', 'Female'])
-  UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
+    tenth = st.text_input('Enter your 10th percentage')
+    twelth = st.text_input('Enter your 12th percentage')
+    UG = st.text_input('Enter your UG percentage')
+    PG = st.text_input('Enter your PG percentage')
+    Gender = st.selectbox('Select your gender', ['Male', 'Female'])
+    UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
 
 # Create input dataframe
-  input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
+    input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
                          'PG': [PG], 'Gender': [Gender], 
                          'UG_Course': [UG_Course]})
 
@@ -53,13 +53,13 @@ def app():
 #input_df = pd.get_dummies(input_df, columns=['Gender'])
 
 # Reorder columns to match training data
-  input_df = input_df.reindex(columns=X.columns, fill_value=0)
+    input_df = input_df.reindex(columns=X.columns, fill_value=0)
 
 # Make prediction on input data
 #prediction = model.predict(input_df)
 
 # Add button to make prediction
-  submit_button = st.form_submit_button(label='Predict Placement')
+    submit_button = st.form_submit_button(label='Predict Placement')
 
 #  Display prediction on button click
 if submit_button:
@@ -71,8 +71,8 @@ if submit_button:
         
         
 # Run app
-if __name__ == '__main__':
-app()
+#if __name__ == '__main__':
+#app()
 # Print prediction
 #if prediction == 1:
  #   st.write('You will get placed!')
