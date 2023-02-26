@@ -29,7 +29,7 @@ print('Accuracy:', accuracy)
 def app():
   
   st.title('College Placement Prediction')
-    st.write('Enter your academic details to predict your chances of getting placed')
+  #  st.write('Enter your academic details to predict your chances of getting placed')
 
     # Create form to take input from user
     with st.form(key='placement-form'):
