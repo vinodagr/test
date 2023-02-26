@@ -58,13 +58,20 @@ input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
 input_df = input_df.reindex(columns=X.columns, fill_value=0)
 
 # Make prediction on input data
-prediction = model.predict(input_df)
+#prediction = model.predict(input_df)
 
+    # Add button to make prediction
+        submit_button = st.form_submit_button(label='Predict Placement')
+
+    # Display prediction on button click
+    if submit_button:
+        prediction =  model.predict(input_df)
+        st.write(prediction)
 # Print prediction
-if prediction == 1:
-    st.write('You will get placed!')
-else:
-    st.write('Sorry, you will not get placed.')
+#if prediction == 1:
+ #   st.write('You will get placed!')
+#else:
+ #   st.write('Sorry, you will not get placed.')
 
 
 
