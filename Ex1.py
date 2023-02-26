@@ -60,8 +60,6 @@ def app():
 
 # Add button to make prediction
     submit_button = st.form_submit_button(label='Predict Placement')
-
-#  Display prediction on button click
 if submit_button:
     # Indent all code under the if statement
     prediction = model.predict(input_df)
