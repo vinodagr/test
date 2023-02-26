@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load data
-df = pd.read_csv('C:\\Users\\Vinod A\\Downloads\\mca_data.csv')
+df = pd.read_csv('mca_data.csv')
 
 # Split data into input and output variables
 X = df.drop(['Campus_placement'], axis=1)
