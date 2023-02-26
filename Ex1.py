@@ -62,7 +62,12 @@ def app():
     submit_button = st.form_submit_button(label='Predict Placement')
 
 #  Display prediction on button click
-
+if submit_button:
+    prediction =  model.predict(input_df)
+    if prediction:
+      st.write('You will get placed!')
+    else:
+      st.write('Sorry, you will not get placed.')
         
 # Run app
 #if __name__ == '__main__':
