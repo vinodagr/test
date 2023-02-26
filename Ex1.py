@@ -32,7 +32,7 @@ def app():
   #  st.write('Enter your academic details to predict your chances of getting placed')
 
     # Create form to take input from user
-    with st.form(key='placement-form'):
+    #with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
 tenth = st.text_input('Enter your 10th percentage')
