@@ -63,12 +63,14 @@ def app():
 
 #  Display prediction on button click
 if submit_button:
-    prediction =  model.predict(input_df)
-    if prediction:
-      st.write('You will get placed!')
+    # Indent all code under the if statement
+    prediction = model.predict(input_df)
+    # Print prediction
+    if prediction == 1:
+        st.write('You will get placed!')
     else:
-      st.write('Sorry, you will not get placed.')
-        
+        st.write('Sorry, you will not get placed.')
+
 # Run app
 #if __name__ == '__main__':
 #app()
