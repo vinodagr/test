@@ -26,7 +26,13 @@ y_pred = model.predict(X_test)
 # Calculate accuracy of model
 accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy)
+def app():
+  
+  st.title('College Placement Prediction')
+    st.write('Enter your academic details to predict your chances of getting placed')
 
+    # Create form to take input from user
+    with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
 tenth = st.text_input('Enter your 10th percentage')
@@ -67,6 +73,11 @@ input_df = input_df.reindex(columns=X.columns, fill_value=0)
     if submit_button:
         prediction =  model.predict(input_df)
         st.write(prediction)
+        
+        
+        # Run app
+if __name__ == '__main__':
+    app()
 # Print prediction
 #if prediction == 1:
  #   st.write('You will get placed!')
