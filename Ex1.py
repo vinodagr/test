@@ -1,6 +1,6 @@
 
 
-
+import streamlit as st
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -28,13 +28,17 @@ accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy)
 
 # Get input from user
-tenth = float(input('Enter SSC percentage: '))
-twelth = float(input('Enter HSC percentage: '))
-UG = float(input('Enter UG degree percentage: '))
-PG = float(input('Enter Post graduation percentage: '))
-Gender =  (input('Enter gender (M/F): 0-female 1-male '))
+# Add a text input widget
+tenth = st.text_input('Enter your 10th percentage')
 
-UG_Course = (input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: '))
+
+twelth = st.text_input('Enter your 12th percentage')
+
+UG = st.text_input('Enter your 12th percentage')
+PG = st.text_input('Enter your 12th percentage')
+Gender = st.selectbox('Select your gender', ['Male', 'Female'])
+
+UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
 
 # Create input dataframe
 input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
@@ -58,9 +62,9 @@ prediction = model.predict(input_df)
 
 # Print prediction
 if prediction == 1:
-    print('You will get placed!')
+    st.write('You will get placed!')
 else:
-    print('Sorry, you will not get placed.')
+    st.write('Sorry, you will not get placed.')
 
 
 
