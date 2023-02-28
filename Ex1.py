@@ -26,9 +26,10 @@ y_pred = model.predict(X_test)
 # Calculate accuracy of model
 accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy)
-def app():
+#def app():
 
- with st.form(key='placement-form'):
+ 
+ #with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
     tenth = st.text_input('Enter your 10th percentage')
@@ -70,8 +71,8 @@ def app():
        st.write('Sorry, you will not get placed.')
 
 #Run app
-if __name__ == '__main__':
-app()
+#if __name__ == '__main__':
+#app()
 # Print prediction
 #if prediction == 1:
  #   st.write('You will get placed!')
