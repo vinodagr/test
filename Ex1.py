@@ -27,9 +27,7 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy)
 def app():
-
- 
-with st.form(key='placement-form'):
+ with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
 tenth = st.text_input('Enter your 10th percentage')
