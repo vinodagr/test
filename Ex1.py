@@ -60,15 +60,15 @@ input_df = input_df.reindex(columns=X.columns, fill_value=0)
 #prediction = model.predict(input_df)
 
 # Add button to make prediction
-    submit_button = st.form_submit_button(label='Predict Placement')
-    if submit_button:
+submit_button = st.form_submit_button(label='Predict Placement')
+if submit_button:
     # Indent all code under the if statement
-      prediction = model.predict(input_df)
+  prediction = model.predict(input_df)
     # Print prediction
-      if prediction == 1:
-       st.write('You will get placed!')
-      else:
-       st.write('Sorry, you will not get placed.')
+  if prediction == 1:
+    st.write('You will get placed!')
+  else:
+    st.write('Sorry, you will not get placed.')
 
 #Run app
 #if __name__ == '__main__':
