@@ -32,12 +32,12 @@ print('Accuracy:', accuracy)
  #with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
-   tenth = st.text_input('Enter your 10th percentage')
-   twelth = st.text_input('Enter your 12th percentage')
-   UG = st.text_input('Enter your UG percentage')
-   PG = st.text_input('Enter your PG percentage')
-   Gender = st.selectbox('Select your gender', ['Male', 'Female'])
-   UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
+tenth = st.text_input('Enter your 10th percentage')
+twelth = st.text_input('Enter your 12th percentage')
+UG = st.text_input('Enter your UG percentage')
+PG = st.text_input('Enter your PG percentage')
+Gender = st.selectbox('Select your gender', ['Male', 'Female'])
+UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
 
 # Create input dataframe
     input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
