@@ -70,7 +70,7 @@ if submit_button:
 
 #Run app
 if __name__ == '__main__':
-app()
+  app()
 # Print prediction
 #if prediction == 1:
  #   st.write('You will get placed!')
