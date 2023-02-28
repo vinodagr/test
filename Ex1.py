@@ -69,7 +69,7 @@ def app():
       else:
        st.write('Sorry, you will not get placed.')
 
-Run app
+#Run app
 if __name__ == '__main__':
 app()
 # Print prediction
