@@ -40,7 +40,7 @@ Gender = st.selectbox('Select your gender', ['Male', 'Female'])
 UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
 
 # Create input dataframe
-    input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
+input_df = pd.DataFrame({'tenth': [tenth], 'twelth': [twelth], 'UG': [UG],
                          'PG': [PG], 'Gender': [Gender], 
                          'UG_Course': [UG_Course]})
 
