@@ -30,7 +30,8 @@ def app():
  with st.form(key='placement-form'):
 # Get input from user
 # Add a text input widget
-  tenth = int(st.text_input('Enter your 10th percentage'))
+tenth=0;
+  tenth = st.text_input('Enter your 10th percentage')
   twelth = st.text_input('Enter your 12th percentage')
   UG = st.text_input('Enter your UG percentage')
   PG = st.text_input('Enter your PG percentage')
