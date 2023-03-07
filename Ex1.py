@@ -34,7 +34,7 @@ def app():
     twelth = st.text_input('Enter your 12th percentage')
     UG = st.text_input('Enter your UG percentage')
     PG = st.text_input('Enter your PG percentage')
-    Gender = st.selectbox('Select your gender', ['Male', 'Female'])
+    Gender = st.selectbox('Select your gender 1-Male , 0-Female', [1, 0])
     UG_Course = st.text_input('Enter UG specialization 1-BCA  2-BCS  3-B.Com: ')
 
     # Add button to make prediction
