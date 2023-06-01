@@ -57,9 +57,9 @@ def app():
 
         # Print prediction
         if prediction == 1:
-            st.write('You will get placed!')
+            st.write('You are more likely to get placed!')
         else:
-            st.write('Sorry, you will not get placed.')
+            st.write('Sorry, you are less likely to get placed.')
 
 
 # Run app
